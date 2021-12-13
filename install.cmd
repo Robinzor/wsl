@@ -13,5 +13,6 @@ msiexec /i $kernelUpdate /qn
 Start-Sleep -Seconds 5
 Write-Host(" ...Cleaning up Kernel Update installer.")
 Remove-Item -Path $kernelUpdate
-
+wsl --set-default-version 2
 # manual reboot
+
