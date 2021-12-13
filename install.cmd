@@ -15,4 +15,4 @@ Write-Host(" ...Cleaning up Kernel Update installer.")
 Remove-Item -Path $kernelUpdate
 wsl --set-default-version 2
 # manual reboot
-
+# download a distro in the windows store.
