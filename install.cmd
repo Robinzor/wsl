@@ -1,5 +1,5 @@
+# Run with Administrator priviledges.
 @echo off
-
 @powershell -NoProfile -ExecutionPolicy bypass -noexit "&([ScriptBlock]::Create((cat -encoding utf8 \"%~f0\" | ? {$_.ReadCount -gt 3}) -join \"`n\"))" %*
 
 Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName VirtualMachinePlatform
